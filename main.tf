@@ -69,7 +69,7 @@ tags= {
   }
 }
 
-resource "aws_instance" "my-ec2-no2" {
+resource "aws_instance" "mySecondInstance" {
   ami           = var.ami_id
   key_name = var.key_name
   instance_type = var.instance_type
@@ -83,6 +83,8 @@ resource "aws_instance" "my-ec2-no2" {
   }
 
   tags= {
-    Name = "my-ec2 -no2"
+    Name = "my-second-ec2-instance"
   }
 }
+
+
